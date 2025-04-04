@@ -1,0 +1,20 @@
+#include<stdio.h>
+int power(int num,int exp){
+    int res = 1;
+    for(int i = 1; i <= exp; ++i){
+        res *= num;
+    }
+    return res;
+}
+
+
+int main(){
+    int num = 0;
+    int exp = 0;
+    printf("input number:");
+    scanf("%d",&num);
+    printf("input exp:");
+    scanf("%d",&exp);
+    printf("result: %d\n",power(num,exp));
+    return 0;
+}
