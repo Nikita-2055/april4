@@ -1,0 +1,25 @@
+#include<stdio.h>
+int prime_number(int n){
+    int count = 0;
+    if(n == 1){
+        printf("number is not prime:\n");
+    }else{
+        for(int i = 1; i <= n; ++i){
+            if(n % i == 0){
+                ++count;
+            }
+        }
+        if(count == 2){
+            printf("number is prime\n");
+        }else{
+            printf("number in not prime\n");
+        }
+    }
+    return 0;
+}
+int main(){
+    int n = 0;
+    scanf("%d",&n);
+    prime_number(n);
+    return 0;
+}
